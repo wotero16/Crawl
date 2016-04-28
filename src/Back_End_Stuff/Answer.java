@@ -12,7 +12,7 @@ public class Answer extends HashMap{
     private HashMap<String, Boolean> answers = new HashMap<>();
 
     public Answer(){
-        
+        ok
     }
 
     public static boolean checkPositive(HashMap<String, Boolean> answer, String userInput) {

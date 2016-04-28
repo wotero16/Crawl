@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c31bb9b-5be3-4eb8-ab81-cb3e69d45291" name="Default" comment="" />
+    <list default="true" id="7c31bb9b-5be3-4eb8-ab81-cb3e69d45291" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Back_End_Stuff/Answer.java" afterPath="$PROJECT_DIR$/src/Back_End_Stuff/Answer.java" />
+    </list>
     <ignored path="Crawl.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -101,9 +103,11 @@
         <entry file="file://$PROJECT_DIR$/src/Back_End_Stuff/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.21385176">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
                 <element signature="method#returnOpposite#0;class#Answer#0" expanded="false" />
               </folding>
             </state>
@@ -672,6 +676,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
             <element signature="method#returnOpposite#0;class#Answer#0" expanded="false" />
           </folding>
         </state>
@@ -757,6 +763,8 @@
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
             <element signature="method#returnOpposite#0;class#Answer#0" expanded="false" />
           </folding>
         </state>
@@ -842,6 +850,8 @@
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
             <element signature="method#returnOpposite#0;class#Answer#0" expanded="false" />
           </folding>
         </state>
@@ -919,6 +929,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
             <element signature="method#returnOpposite#0;class#Answer#0" expanded="false" />
           </folding>
         </state>
@@ -1101,9 +1113,11 @@
     <entry file="file://$PROJECT_DIR$/src/Back_End_Stuff/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21385176">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
             <element signature="method#returnOpposite#0;class#Answer#0" expanded="false" />
           </folding>
         </state>

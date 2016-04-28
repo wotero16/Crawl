@@ -49,7 +49,7 @@ public class CrawlMain  extends Application{
         } else{
             System.out.println("Asshole");
         }
-
+        launch(args);
 
     }
 
@@ -162,7 +162,7 @@ public class CrawlMain  extends Application{
         Scene scene = new Scene(mainPane, 780,800);
         primaryStage.setTitle("Crawl");
         primaryStage.setScene(scene);
-
+        primaryStage.show();
         width = scene.getWidth();
         height = scene.getHeight();
 

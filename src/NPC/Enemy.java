@@ -18,17 +18,12 @@ public class Enemy {
     private int charisma;
 
     public Enemy(){
-
-        this.name = name;
-        this.being = being;
-        this.profession = profession;
         this.strength = strength + being.getStrengthBonus() + profession.getStrengthBonus();
         this.dexterity = dexterity + being.getDexterityBonus() + profession.getDexterityBonus();
         this.constitution = constitution + being.getConstitutionBonus() + profession.getConstitutionBonus();
         this.intelligence = intelligence + being.getIntelligenceBonus() + profession.getIntelligenceBonus();
         this.wisdom = wisdom + being.getWisdomBonus() + profession.getWisdomBonus();
         this.charisma = charisma + being.getCharismaBonus() + profession.getCharismaBonus();
-
     }
 
     public Enemy(String name, Beings being, Professions profession, int strength, int dexterity, int constitution,
@@ -43,7 +38,6 @@ public class Enemy {
         this.intelligence = intelligence + being.getIntelligenceBonus() + profession.getIntelligenceBonus();
         this.wisdom = wisdom + being.getWisdomBonus() + profession.getWisdomBonus();
         this.charisma = charisma + being.getCharismaBonus() + profession.getCharismaBonus();
-
     }
 
     public String getName() {

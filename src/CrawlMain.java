@@ -1,4 +1,5 @@
 import Back_End_Stuff.Answer;
+import GUI.CommandBar;
 import GUI.TextScrollPane;
 import Playable.Beings;
 import Playable.Player;
@@ -36,19 +37,19 @@ public class CrawlMain  extends Application{
         answer.insertAnswer("1", false);
 
         System.out.println("Crawl\n");
-        System.out.println("Do you wish to enter the realm of Crawl?" +
-                "\nYes or No");
-        startGame = scan.nextLine();
-        if(Answer.checkPositive(answer.getAnswers(), startGame )){
-            System.out.println("Welcome to the world of Crawl.");
-            System.out.println("\nTell me about yourself.");
-            changeName();
-            chooseBeing();
-        }else if (!(Answer.checkNegative(answer.getAnswers(), startGame))){
-            System.out.println("You turn around and leave.");
-        } else{
-            System.out.println("Asshole");
-        }
+//        System.out.println("Do you wish to enter the realm of Crawl?" +
+//                "\nYes or No");
+//        startGame = scan.nextLine();
+//        if(Answer.checkPositive(answer.getAnswers(), startGame )){
+//            System.out.println("Welcome to the world of Crawl.");
+//            System.out.println("\nTell me about yourself.");
+//            changeName();
+//            chooseBeing();
+//        }else if (!(Answer.checkNegative(answer.getAnswers(), startGame))){
+//            System.out.println("You turn around and leave.");
+//        } else{
+//            System.out.println("Asshole");
+//        }
         launch(args);
 
     }
@@ -149,9 +150,11 @@ public class CrawlMain  extends Application{
                         "investigate your surrounding. Use your will to move around \n" +
                         "and expand your knowledge of this world to make progress.\n");
 
+        CommandBar textBox = new CommandBar();
+
         TextScrollPane textScrollPane = new TextScrollPane(width,height);
         Pane leftPane = new Pane();
-        leftPane.getChildren().addAll(textTest, textScrollPane);
+        leftPane.getChildren().addAll(textTest, textScrollPane, textBox);
         //Typical stage and scene setup
         BorderPane mainPane = new BorderPane();
         mainPane.setLeft(leftPane);

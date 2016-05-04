@@ -146,21 +146,24 @@ public class CrawlMain  extends Application{
 
         //Left Pane
         Label textTest = new Label();
-        textTest.setText("This is the begining of a story. Feel free to navigate and\n " +
-                        "investigate your surrounding. Use your will to move around \n" +
-                        "and expand your knowledge of this world to make progress.\n");
-
         CommandBar textBox = new CommandBar();
 
         TextScrollPane textScrollPane = new TextScrollPane(width,height);
         Pane leftPane = new Pane();
-        leftPane.getChildren().addAll(textTest, textScrollPane, textBox);
+        leftPane.getChildren().addAll(textBox);
+
+        //Bottom Pane
+        CommandBar commandBar = new CommandBar();
+        commandBar.setOnAction(e -> {
+            System.out.println("Actioned");
+            leftPane.getChildren().addAll()
+        });
+
         //Typical stage and scene setup
         BorderPane mainPane = new BorderPane();
         mainPane.setLeft(leftPane);
-        mainPane.setCenter(new Text("This is the begining of a story. Feel free to navigate and\n " +
-                                    "investigate your surrounding. Use your will to move around \n" +
-                                    "and expand your knowledge of this world to make progress.\n"));
+        mainPane.setBottom(commandBar);
+
 
         Scene scene = new Scene(mainPane, 780,800);
         primaryStage.setTitle("Crawl");

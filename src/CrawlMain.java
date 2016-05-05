@@ -6,8 +6,8 @@ import Playable.Player;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -145,23 +145,26 @@ public class CrawlMain  extends Application{
 
 
         //Left Pane
-        Label textTest = new Label();
-        CommandBar textBox = new CommandBar();
+        VBox leftPane = new VBox();
+        ScrollPane textScrollPane = new ScrollPane();
+        textScrollPane.setFitToWidth(true);
+        textScrollPane.setFitToHeight(true);
+        textScrollPane.setMaxHeight(300);
+        textScrollPane.setMaxWidth(200);
+        textScrollPane.setContent(leftPane);
 
-        TextScrollPane textScrollPane = new TextScrollPane(width,height);
-        Pane leftPane = new Pane();
-        leftPane.getChildren().addAll(textBox);
+
 
         //Bottom Pane
         CommandBar commandBar = new CommandBar();
         commandBar.setOnAction(e -> {
             System.out.println("Actioned");
-            leftPane.getChildren().addAll()
+            leftPane.getChildren().add(new Text(commandBar.getText()));
         });
 
         //Typical stage and scene setup
         BorderPane mainPane = new BorderPane();
-        mainPane.setLeft(leftPane);
+        mainPane.setLeft(textScrollPane);
         mainPane.setBottom(commandBar);
 
 

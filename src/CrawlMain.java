@@ -19,8 +19,8 @@ import java.util.Scanner;
 
 public class CrawlMain  extends Application{
     static Answer answer = new Answer();
-    double width = 300;
-    double height = 600;
+    double WIDTH = 300;
+    double HEIGHT = 600;
     static Scanner scan  = new Scanner(System.in);
     static Player player = new Player();
     static String startGame;
@@ -149,8 +149,11 @@ public class CrawlMain  extends Application{
         ScrollPane textScrollPane = new ScrollPane();
         textScrollPane.setFitToWidth(true);
         textScrollPane.setFitToHeight(true);
-        textScrollPane.setMaxHeight(300);
-        textScrollPane.setMaxWidth(200);
+
+        textScrollPane.setMaxHeight(HEIGHT/1.2);
+        textScrollPane.setMinHeight(HEIGHT/1.1);
+        textScrollPane.setMaxWidth(WIDTH);
+        textScrollPane.setMinWidth(WIDTH);
         textScrollPane.setContent(leftPane);
 
 
@@ -168,13 +171,11 @@ public class CrawlMain  extends Application{
         mainPane.setBottom(commandBar);
 
 
-        Scene scene = new Scene(mainPane, 780,800);
+        Scene scene = new Scene(mainPane, WIDTH,HEIGHT);
         primaryStage.setTitle("Crawl");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
-        width = scene.getWidth();
-        height = scene.getHeight();
-
     }
 
     public void checkStatus (){

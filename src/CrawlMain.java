@@ -5,9 +5,11 @@ import Playable.Beings;
 import Playable.Player;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -146,9 +148,17 @@ public class CrawlMain  extends Application{
 
         //Left Pane
         VBox leftPane = new VBox();
+        leftPane.setStyle("-fx-text-box-border: none; -fx-focus-color: none; -fx-display-caret: true; -fx-text-fill:green; -fx-font-size: 14px; -fx-background-color: #2f2d2f; -fx-background-radius:0;");
+        Text textTest = new Text("This is a Test to see how content can be Displayed in the Screen for the User. Please pardon my grammar as I only intend to test this feature.");
+        textTest.setFill(Color.WHITE);
+        leftPane.getChildren().add(textTest);
         ScrollPane textScrollPane = new ScrollPane();
+
+
         textScrollPane.setFitToWidth(true);
         textScrollPane.setFitToHeight(true);
+        textScrollPane.setStyle("-fx-text-box-border: none; -fx-focus-color: none; -fx-display-caret: true; -fx-text-fill:green; -fx-font-size: 14px; -fx-background-color: #2f2d2f; -fx-background-radius:0;");
+
 
         textScrollPane.setMaxHeight(HEIGHT/1.2);
         textScrollPane.setMinHeight(HEIGHT/1.1);
@@ -158,11 +168,18 @@ public class CrawlMain  extends Application{
 
 
 
+
         //Bottom Pane
         CommandBar commandBar = new CommandBar();
+
+        Label label = new Label(">");
+        label.setTextFill(Color.RED);
+        label.setContentDisplay(ContentDisplay.LEFT);
+
         commandBar.setOnAction(e -> {
             System.out.println("Actioned");
-            leftPane.getChildren().add(new Text(commandBar.getText()));
+            leftPane.getChildren().addAll(new Text("> "+commandBar.getText()));
+            commandBar.clear();
         });
 
         //Typical stage and scene setup

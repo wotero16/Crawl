@@ -12,8 +12,7 @@ import javafx.scene.control.TextField;
 public class CommandBar extends TextField {
 
     public CommandBar(){
-        setText(">");
-        setStyle("-fx-text-box-border: none; -fx-focus-color: none; -fx-display-caret: false; -fx-text-fill:green; -fx-font-size: 14px; -fx-background-color: #2f2d2f; -fx-background-radius:0;");
+        setStyle("-fx-text-box-border: none; -fx-focus-color: none; -fx-display-caret: true; -fx-text-fill:green; -fx-font-size: 14px; -fx-background-color: #2f2d2f; -fx-background-radius:0;");
 
     }
 }
